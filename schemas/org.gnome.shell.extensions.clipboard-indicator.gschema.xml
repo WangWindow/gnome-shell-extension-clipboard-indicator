@@ -39,18 +39,7 @@
         <range min="0" max="3"/>
     </key>
 
-    <key name="disable-down-arrow" type="b">
-        <default>true</default>
-        <summary>Remove down arrow in top bar</summary>
-    </key>
 
-    <key name="blink-icon-on-copy" type="b">
-        <default>false</default>
-        <summary>Blink icon on copy</summary>
-        <description>
-            If true, the topbar icon will blink when content is copied to clipboard.
-        </description>
-    </key>
 
     <key name="show-search-bar" type="b">
         <default>true</default>
@@ -73,10 +62,6 @@
         <description>If true, the clear history button will be displayed.</description>
     </key>
 
-    <key name="clear-on-boot" type="b">
-        <default>false</default>
-        <summary>Clear clipboard history on every system reboot.</summary>
-    </key>
 
     <key name="paste-on-select" type="b">
         <default>false</default>
@@ -104,9 +89,9 @@
 
     <key type="i" name="cache-size">
         <default>5</default>
-        <summary>The allowed size for the registry cache file in MB</summary>
+        <summary>History data file size limit in MB (excluding image files)</summary>
         <description>
-            If the cache overflows this limit, the file will be overriden.
+            If the history data file exceeds this limit when loaded, it is moved to a backup and a new history is started. Image files are not included in this limit.
             High limit might cause slowness of shell startup.
         </description>
         <range min="1" max="1024"/>
@@ -114,7 +99,7 @@
 
     <key name="cache-only-favorites" type="b">
         <default>false</default>
-        <summary>Disable the registry cache file for favorites and use memory only</summary>
+        <summary>Persist only pinned entries and keep other history in memory</summary>
         <description>
             Contents which are not favorites are not stored and retrieved from a cache (registry.txt) file.
             This can avoid writing passwords to a plaintext file, but at the cost of persistant history.
@@ -122,13 +107,6 @@
         </description>
     </key>
 
-    <key name="notify-on-copy" type="b">
-        <default>false</default>
-        <summary>Show notification on copy to clipboard</summary>
-        <description>
-            If true, a notification is shown when content is copied to clipboard.
-        </description>
-    </key>
 
     <key name="notify-on-cycle" type="b">
         <default>true</default>
@@ -138,27 +116,11 @@
         </description>
     </key>
 
-    <key name="notify-on-clear" type="b">
-        <default>true</default>
-        <summary>Show notification on Clear History</summary>
-        <description>
-            If true, a notification is shown when the history is cleared.
-        </description>
-    </key>
-
     <key name="confirm-clear" type="b">
         <default>true</default>
         <summary>Show confirmation dialog on Clear History</summary>
         <description>
             If true, a confirmation dialog is shown when attempting to Clear History.
-        </description>
-    </key>
-
-    <key name="confirm-pinned-delete" type="b">
-        <default>false</default>
-        <summary>Show confirmation dialog on deleting pinned item</summary>
-        <description>
-            If true, a confirmation dialog is shown when attempting to delete a pinned item.
         </description>
     </key>
 
@@ -226,9 +188,9 @@
         </key>
         <key name="cache-images" type="b">
             <default>true</default>
-            <summary>Cache images</summary>
+            <summary>Record images</summary>
             <description>
-                Allow caching images to disk
+                Record copied images in clipboard history
             </description>
         </key>
         <key name="excluded-apps" type="as">
@@ -236,28 +198,6 @@
             <summary>List of excluded applications</summary>
             <description>
                 A list of applications that are excluded from clipboard history.
-            </description>
-        </key>
-        <key name="clear-history-on-interval" type="b">
-            <default>false</default>
-            <summary>Enable clearing history on interval</summary>
-            <description>
-                If true, clipboard history will be cleared at regular intervals.
-            </description>
-        </key>
-        <key name="clear-history-interval" type="i">
-            <default>60</default>
-            <summary>Interval for clearing history in minutes</summary>
-            <description>
-                The interval in minutes at which the clipboard history will be cleared.
-            </description>
-            <range min="1"/>
-        </key>
-        <key name="next-history-clear" type="i">
-            <default>-1</default>
-            <summary>Next scheduled history clear time</summary>
-            <description>
-                The timestamp for the next scheduled history clear.
             </description>
         </key>
         <key name="case-sensitive-search" type="b">
@@ -270,32 +210,5 @@
             <summary>Regex-based search</summary>
             <description>Allow regex in search</description>
         </key>
-    <key name="open-at-cursor" type="b">
-        <default>false</default>
-        <summary>Open menu at cursor position</summary>
-        <description>
-            If true, the menu will open at the cursor position when using the keyboard shortcut.
-        </description>
-    </key>
-    <key name="show-delete-button" type="b">
-        <default>true</default>
-        <summary>Show the delete button on each item</summary>
-    </key>
-    <key name="show-tag-button" type="b">
-        <default>true</default>
-        <summary>Show the tag button on each item</summary>
-    </key>
-    <key name="show-pin-button" type="b">
-        <default>true</default>
-        <summary>Show the pin/favorite button on each item</summary>
-    </key>
-    <key name="show-edit-button" type="b">
-        <default>true</default>
-        <summary>Show the edit button on each text item</summary>
-    </key>
-    <key name="show-preview-button" type="b">
-        <default>true</default>
-        <summary>Show the preview button on each image item</summary>
-    </key>
     </schema>
 </schemalist>

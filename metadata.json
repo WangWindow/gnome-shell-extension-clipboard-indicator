@@ -1,15 +1,9 @@
 {
-    "shell-version": [
-        "46",
-        "47",
-        "48",
-        "49",
-        "50"
-    ],
-    "uuid": "clipboard-indicator@tudmotu.com",
+    "shell-version": ["50", "51"],
+    "uuid": "clipboard-indicator@choco2233.io",
     "name": "Clipboard Indicator",
-    "description": "The most popular clipboard manager for GNOME, with over 1M downloads",
-    "url": "https://github.com/Tudmotu/gnome-shell-extension-clipboard-indicator",
+    "description": "A compact clipboard history manager for GNOME Shell",
+    "url": "https://github.com/WangWindow/gnome-shell-extension-clipboard-indicator",
     "gettext-domain": "clipboard-indicator",
     "settings-schema": "org.gnome.shell.extensions.clipboard-indicator"
 }

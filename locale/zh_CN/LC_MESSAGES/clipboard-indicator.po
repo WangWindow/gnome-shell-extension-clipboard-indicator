@@ -60,7 +60,7 @@ msgstr ""
 
 #: extension.js:762 prefs.js:187
 msgid "Paste"
-msgstr ""
+msgstr "粘贴"
 
 #: extension.js:845
 #, fuzzy
@@ -131,7 +131,7 @@ msgstr "行为"
 
 #: prefs.js:17 prefs.js:268
 msgid "Search"
-msgstr ""
+msgstr "搜索"
 
 #: prefs.js:18 prefs.js:264
 msgid "Limits"
@@ -209,11 +209,11 @@ msgstr ""
 
 #: prefs.js:95
 msgid "Cache only pinned items"
-msgstr "仅缓存收藏条目"
+msgstr "仅持久保存固定项"
 
 #: prefs.js:96
 msgid "Only save pinned (favorite) entries to disk"
-msgstr ""
+msgstr "仅将固定项保存到磁盘"
 
 #: prefs.js:100
 msgid "Show notification on copy"
@@ -224,9 +224,8 @@ msgid "Display a notification each time text is copied"
 msgstr ""
 
 #: prefs.js:105
-#, fuzzy
 msgid "Show notification on cycle"
-msgstr "复制时显示通知"
+msgstr "切换条目时显示通知"
 
 #: prefs.js:106
 msgid "Display a notification when cycling through entries with shortcuts"
@@ -242,9 +241,8 @@ msgid "Display a notification when clipboard history is cleared"
 msgstr ""
 
 #: prefs.js:115
-#, fuzzy
 msgid "Prompt for confirmation on Clear History"
-msgstr "清除历史时显示通知"
+msgstr "清空历史前确认"
 
 #: prefs.js:116
 #, fuzzy
@@ -261,7 +259,7 @@ msgstr ""
 
 #: prefs.js:125
 msgid "Remove whitespace around text"
-msgstr "移除文字周围的空白字符"
+msgstr "去除文本首尾空白"
 
 #: prefs.js:126
 msgid "Strip leading and trailing whitespace from text entries on copy"
@@ -269,7 +267,7 @@ msgstr ""
 
 #: prefs.js:130
 msgid "Move item to the top after selection"
-msgstr "选择后将项目移到顶部"
+msgstr "选中后移到顶部"
 
 #: prefs.js:131
 msgid "When selecting an entry, bring it to the top of the history"
@@ -277,7 +275,7 @@ msgstr ""
 
 #: prefs.js:135
 msgid "Keep selected entry after Clear History"
-msgstr "清除历史后保存选中条目"
+msgstr "清空历史时保留当前条目"
 
 #: prefs.js:136
 msgid ""
@@ -287,7 +285,7 @@ msgstr ""
 
 #: prefs.js:140
 msgid "Place the pinned section on the bottom"
-msgstr "将收藏的内容置底"
+msgstr "将固定项放在底部"
 
 #: prefs.js:141
 #, fuzzy
@@ -296,34 +294,31 @@ msgstr "将收藏的内容置底"
 
 #: prefs.js:145
 msgid "Show Search Bar"
-msgstr ""
+msgstr "显示搜索栏"
 
 #: prefs.js:146
 msgid "Display a search field at the top of the clipboard menu"
 msgstr ""
 
 #: prefs.js:149
-#, fuzzy
 msgid "Show Private Mode"
-msgstr "隐私模式"
+msgstr "显示私人模式入口"
 
 #: prefs.js:150
 msgid "Display the private mode toggle in the clipboard menu"
 msgstr ""
 
 #: prefs.js:153
-#, fuzzy
 msgid "Show Settings Button"
-msgstr "显示粘贴按钮"
+msgstr "显示设置入口"
 
 #: prefs.js:154
 msgid "Display a shortcut to these settings in the clipboard menu"
 msgstr ""
 
 #: prefs.js:157
-#, fuzzy
 msgid "Show Clear History Button"
-msgstr "显示粘贴按钮"
+msgstr "显示清空历史入口"
 
 #: prefs.js:158
 msgid "Display the clear history button in the clipboard menu"
@@ -339,7 +334,7 @@ msgstr ""
 
 #: prefs.js:167
 msgid "Paste on select"
-msgstr ""
+msgstr "选中后粘贴"
 
 #: prefs.js:168
 msgid "Automatically paste the entry into the active window when selected"
@@ -401,15 +396,15 @@ msgstr "已复制到剪贴板"
 
 #: prefs.js:213
 msgid "Excluded Apps"
-msgstr ""
+msgstr "排除应用"
 
 #: prefs.js:214
 msgid "Content copied will not be saved while these apps are in focus"
-msgstr ""
+msgstr "这些应用处于前台时暂停记录剪贴板"
 
 #: prefs.js:225
 msgid "Case-sensitive"
-msgstr ""
+msgstr "区分大小写"
 
 #: prefs.js:226
 msgid "Match uppercase and lowercase letters exactly when searching"
@@ -417,7 +412,7 @@ msgstr ""
 
 #: prefs.js:230
 msgid "Regular expressions"
-msgstr ""
+msgstr "正则表达式"
 
 #: prefs.js:231
 msgid "Allow regular expressions to filter clipboard entries"
@@ -475,32 +470,53 @@ msgstr "开启键盘快捷键"
 
 #: prefs.js:408
 msgid "Disabled"
-msgstr "关闭"
+msgstr "已禁用"
 
 #: prefs.js:417
 msgid "Enter shortcut"
-msgstr "输入键盘快捷键"
+msgstr "按下快捷键"
 
 #: prefs.js:504
 msgid "Window class name, e.g. \"KeePassXC\""
-msgstr ""
+msgstr "窗口类名，例如“KeePassXC”"
 
 #: prefs.js:516
 msgid "Choose from installed applications"
-msgstr ""
+msgstr "从已安装的应用中选择"
 
 #: prefs.js:533
 msgid "Search applications..."
-msgstr ""
+msgstr "搜索应用…"
 
 #~ msgid "Adds a paste button to each entry that lets you paste it directly"
 #~ msgstr "在每个条目之后显示直接粘贴按钮"
-
-#~ msgid "Requires restarting the extension"
-#~ msgstr "需要重启此扩展"
 
 #~ msgid "Refresh Interval (ms)"
 #~ msgstr "刷新间隔（毫秒）"
 
 #~ msgid "Disable cache file"
 #~ msgstr "禁用缓存文件"
+
+msgid "History and cache"
+msgstr "历史与缓存"
+
+msgid "Menu and top bar"
+msgstr "菜单与顶部栏"
+
+msgid "Privacy"
+msgstr "隐私"
+
+msgid "History data file limit (MB)"
+msgstr "历史数据文件大小上限（MB）"
+
+msgid "Does not include cached image files"
+msgstr "不包含图片缓存文件"
+
+msgid "Record images"
+msgstr "记录图片"
+
+msgid "Requires restarting the extension"
+msgstr "需要重新启用扩展"
+
+msgid "Add excluded application"
+msgstr "添加排除应用"
